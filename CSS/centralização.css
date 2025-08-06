@@ -22,6 +22,7 @@ form{
 }
 footer{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     gap: 10px;
 }
@@ -31,4 +32,10 @@ footer{
     align-items: center;
     flex-flow: column;
     gap: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
 }

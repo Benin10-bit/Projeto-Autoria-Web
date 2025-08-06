@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-tema="escuro" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="../CSS/centralização.css">
+    <link rel="stylesheet" href="../CSS/paleta.css">
+
 
     <title>Contanto</title>
 </head>
@@ -18,12 +20,18 @@
         <img src="imgs/Campus Caicó - Logo_Color Hor.png" alt="logo" class="IF">
         <nav class="navbar">
             <ul>
-                <li><a href="inicio.html">Início</a></li>
+                <li><a href="../index.html">Início</a></li>
                 <li><a href="gerais.html">Curiosidades Gerais</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="créditos.html">Créditos</a></li>
             </ul>
         </nav>
+        <button id="toggleTema" class="botaoTema" aria-label="Alternar tema">
+                <label for="botaoTema">tema:</label>
+                <svg class="iconeTema" viewBox="0 0 24 24" fill="none">
+                    <path id="icone" d="" />
+                </svg>
+            </button>
     </header>
     <main class="container">
         <div>
@@ -57,5 +65,7 @@
             <p>Email: museuinutil@gmail.com</p>
         </address>
     </footer>
+    <script src="../JS/mudarTema.js"></script>
+
 </body>
 </html>

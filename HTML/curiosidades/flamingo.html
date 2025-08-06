@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-tema="escuro" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../CSS/estilo.css">
     <link rel="stylesheet" href="../../CSS/centralização.css">
+    <link rel="stylesheet" href="../../CSS/paleta.css">
+
 
     <title>Flamingo</title>
 </head>
 <body>
     <header>
         <h1>Flamingos comendo</h1>
+        <button id="toggleTema" class="botaoTema" aria-label="Alternar tema">
+                <label for="botao-tema">tema:</label>
+                <svg class="iconeTema" viewBox="0 0 24 24" fill="none">
+                    <path id="icone" d="" />
+                </svg>
+            </button>
     </header>
     <main class="container" id="trocarHeigth">
         <article id="curiosidades">
@@ -21,8 +29,9 @@
         </article>
         <figure>
             <img src="../imgs/flamingos.webp" alt="flamingos">
-            <figcaption>flamingos</figcaption>
+            <figcaption style="color: var(--secondText);">flamingos</figcaption>
         </figure>
     </main>
+    <script src="../../JS/mudarTema.js"></script>
 </body>
 </html>

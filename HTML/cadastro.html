@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-tema="escuro" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +10,20 @@
 
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="../CSS/centralização.css">
+    <link rel="stylesheet" href="../CSS/paleta.css">
+
 
     <title>Cadastro</title>
 </head>
 <body>
     <header>
         <h1>Cadastro</h1>
+        <button id="toggleTema" class="botaoTema" aria-label="Alternar tema">
+                <label for="botaoTema">tema:</label>
+                <svg class="iconeTema" viewBox="0 0 24 24" fill="none">
+                    <path id="icone" d="" />
+                </svg>
+            </button>
     </header>
     <main class="container">
         <section>
@@ -37,6 +45,6 @@
             <p>Já é usuário?</p>
             <a href="login.html">ENTRE</a>
     </footer>
-
+    <script src="../JS/mudarTema.js"></script>
 </body>
 </html>

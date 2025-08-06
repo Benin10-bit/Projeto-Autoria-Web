@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-tema="escuro" lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/centralização.css">
+    <link rel="stylesheet" href="../CSS/paleta.css">
+
 
     <title>Créditos</title>
 </head>
@@ -17,15 +20,21 @@
         <img src="imgs/Campus Caicó - Logo_Color Hor.png" alt="logo" class="IF">
         <nav class="navbar">
             <ul>
-                <li><a href="inicio.html">Início</a></li>
+                <li><a href="../index.html">Início</a></li>
                 <li><a href="sobre.html">sobre</a></li>
                 <li><a href="contato.html">Envie</a></li>
                 <li><a href="gerais.html">Gerais</a></li>
             </ul>
         </nav>
-        <h1>Créditos</h1>
+        <button id="toggleTema" class="botaoTema" aria-label="Alternar tema">
+                <label for="botaoTema">tema:</label>
+                <svg class="iconeTema" viewBox="0 0 24 24" fill="none">
+                    <path id="icone" d="" />
+                </svg>
+            </button>
     </header>
     <main>
+        <h1>Créditos</h1>
         <article id="agradecimentos">
             <p>Este projeto doi idealizado por três grandes especialistas em coisas que ninguém pediu:</p>
             <ul>
@@ -42,5 +51,6 @@
     <Footer>
         <H2>OBRIGADO!</H2>
     </Footer>
+    <script src="../JS/mudarTema.js"></script>
 </body>
 </html>
