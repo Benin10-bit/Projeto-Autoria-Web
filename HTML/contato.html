@@ -17,7 +17,7 @@
 
     <title>Contanto</title>
 </head>
-<body>
+<body style="overflow-y: hidden;">
     <header>
         <img src="imgs/Campus Caicó - Logo_Color Hor.png" alt="logo" class="IF">
         <nav class="navbar">
@@ -35,29 +35,29 @@
                 </svg>
             </button>
     </header>
-    <main class="container">
+    <main class="container" style="margin-top: 5rem;">
         <div>
-            <h1>Envie sua curiosidade</h1>
+            <h1 style="margin-bottom: 2.5rem;">Envie sua curiosidade</h1>
             <figure>
-                <img src="imgs/carinha gente boa.png" alt="homem do contato">
+                <img style="margin-bottom: 2.5rem;" src="imgs/carinha gente boa.png" alt="homem do contato">
             </figure>
         </div>
         <section id="form">
-            <form action="#">
+            <form action="https://formspree.io/f/mnnzoaeg" method="post">
             
                 <label for="Email">Insira seu email:</label>
-                <input type="email" name="Email" id="email">
+                <input class="input" type="email" name="Email" id="email">
                 
                 <label for="nome">Insira seu nome:</label>
-                <input type="text" name="nome" id="nome">
+                <input class="input" type="text" name="nome" id="nome">
                             
                 <label for="tel">Insira seu telefone:</label>
-                <input type="tel" name="tel" id="tel">
+                <input class="input" type="tel" name="tel" id="tel">
                 
                 <label for="curiosidade">Digite sua curiosidade:</label>
-                <textarea name="curiosidade" id="curiosidade" rows="5"></textarea>
+                <textarea class="input" name="curiosidade" id="curiosidade" rows="5"></textarea>
                 
-                <button type="submit" class="botao">Enviar</button>
+                <button id="enviarEmail" type="submit" class="botao">Enviar</button>
             </form>
         </section>
     </main>
@@ -67,7 +67,7 @@
             <p>Email: museuinutil@gmail.com</p>
         </address>
     </footer>
-    <script src="../JS/mudarTema.js"></script>
 
+    <script src="../JS/mudarTema.js"></script>
 </body>
 </html>
