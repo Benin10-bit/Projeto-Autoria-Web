@@ -43,20 +43,19 @@
             </figure>
         </div>
         <section id="form">
-            <form action="https://formspree.io/f/mnnzoaeg" method="post">
-            
-                <label for="Email">Insira seu email:</label>
-                <input class="input" type="email" name="Email" id="email">
-                
+            <form action="https://formspree.io/f/mnnzoaeg" method="POST">
+                <label for="email">Insira seu email:</label>
+                <input class="input" type="email" name="email" id="email" required>
+        
                 <label for="nome">Insira seu nome:</label>
-                <input class="input" type="text" name="nome" id="nome">
-                            
+                <input class="input" type="text" name="nome" id="nome" required>
+                    
                 <label for="tel">Insira seu telefone:</label>
                 <input class="input" type="tel" name="tel" id="tel">
-                
+        
                 <label for="curiosidade">Digite sua curiosidade:</label>
-                <textarea class="input" name="curiosidade" id="curiosidade" rows="5"></textarea>
-                
+                <textarea class="input" name="curiosidade" id="curiosidade" rows="5" required></textarea>
+        
                 <button id="enviarEmail" type="submit" class="botao">Enviar</button>
             </form>
         </section>
